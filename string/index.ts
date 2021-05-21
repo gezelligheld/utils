@@ -3,5 +3,5 @@ import getQueryParam from './getQueryParam';
 
 export default {
     generateApi,
-    getQueryParam
+    getQueryParam,
 };
