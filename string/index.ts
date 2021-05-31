@@ -1,7 +1,7 @@
-import generateApi from './generateApi';
 import getQueryParam from './getQueryParam';
+import getRandomString from './getRandomString';
 
 export default {
-    generateApi,
+    getRandomString,
     getQueryParam,
 };
