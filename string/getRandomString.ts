@@ -12,7 +12,7 @@ export default function getRandomString(num: number): string {
     }
 
     for (let i = 0; i < 10; i ++) {
-        numbers.push(i);
+        numbers.push(i.toString());
     }
 
     const groups = [letters, numbers];

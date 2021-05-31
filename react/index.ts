@@ -4,4 +4,4 @@ import renderRoutes from './renderRoutes';
 export default {
     generateApi,
     renderRoutes,
-}
+};

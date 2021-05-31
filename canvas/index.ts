@@ -4,4 +4,4 @@ import autoWrap from './autoWrap';
 export default {
     drawImage,
     autoWrap,
-}
+};

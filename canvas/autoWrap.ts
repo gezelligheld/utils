@@ -10,7 +10,7 @@ export default function wrapText(
     let letter = '';
     // 记录需要折行的字符索引
     const indexs: number[] = [];
-    const _lineHeight = lineHeight || 0;
+    const realLineHeight = lineHeight || 0;
   
     for (let i = 0; i < content.length; i ++) {
         const curText = letter + content[i];
@@ -27,9 +27,9 @@ export default function wrapText(
     if (indexs.length > 0) {
         indexs.forEach((item, index) => {
             const str = content.slice(index === 0 ? 0 : indexs[index - 1], item);
-            ctx.fillText(str, x, y + index * _lineHeight);
+            ctx.fillText(str, x, y + index * realLineHeight);
             if (index === indexs.length - 1) {
-                ctx.fillText(content.slice(item), x, y + (index + 1) *  _lineHeight);
+                ctx.fillText(content.slice(item), x, y + (index + 1) *  realLineHeight);
             }
         });
     }

@@ -31,6 +31,9 @@ module.exports = {
     'no-debugger': 0,
     'no-lonely-if': 0,
     'no-empty': 0,
+    'indent': ['error', 4], // 4个空格缩进
+    "@typescript-eslint/indent": ["error", 4],
+    "@typescript-eslint/brace-style": 0,
 
     // https://github.com/typescript-eslint/typescript-eslint/issues/2540#issuecomment-692866111
     'no-use-before-define': 0,
