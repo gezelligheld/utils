@@ -1,0 +1,13 @@
+/* 设置滚动条样式 */
+.container::-webkit-scrollbar {
+    width: 5px;
+    height: 10px;
+}
+.container::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, .05);
+    border-radius: 10px;
+}
+.container:hover::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, .2);
+    border-radius: 10px;
+}
