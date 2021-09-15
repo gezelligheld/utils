@@ -1,0 +1,21 @@
+/* 省略号动画 */
+@keyframes textEllipsis {
+    from {
+        width: 0;
+    }
+    to {
+        width: .4rem;
+    }
+}
+
+.box:after {
+    position: absolute;
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: bottom;
+    animation: textEllipsis 1.5s infinite;
+    content: "...";
+    letter-spacing: .04rem;
+    white-space: nowrap;
+    text-align: left;
+}

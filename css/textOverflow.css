@@ -1,6 +1,6 @@
 /* 单行文字缩略显示 */
 .text-overflow {
     overflow: hidden;
-    text-overflow :ellipsis;
+    text-overflow: ellipsis;
     white-space : nowrap ;
 }
