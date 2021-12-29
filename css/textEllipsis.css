@@ -4,7 +4,7 @@
         width: 0;
     }
     to {
-        width: .4rem;
+        width: 0.4rem;
     }
 }
 
@@ -14,8 +14,8 @@
     display: inline-block;
     vertical-align: bottom;
     animation: textEllipsis 1.5s infinite;
-    content: "...";
-    letter-spacing: .04rem;
+    content: '...';
+    letter-spacing: 0.04rem;
     white-space: nowrap;
     text-align: left;
 }

@@ -1,7 +1,4 @@
-export function loadImage(
-    img: HTMLImageElement,
-    src: string,
-): void {
+export function loadImage(img: HTMLImageElement, src: string): void {
     const xhr = new XMLHttpRequest();
     xhr.open('GET', src);
     xhr.responseType = 'blob';
@@ -30,15 +27,11 @@ export function drawCanvasImg(
         // 但在企业微信和部分浏览器中无效，换种方式，转成base64加载
         if (/^https?/.test(src)) {
             loadImage(img, src);
-        }
-        else {
+        } else {
             img.src = src;
         }
-        img.onload = e => {
-            ctx.drawImage(
-                img,
-                ...position,
-            );
+        img.onload = (e) => {
+            ctx.drawImage(img, ...position);
             resolve(e);
         };
         img.onerror = reject;

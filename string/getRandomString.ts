@@ -7,17 +7,17 @@ export default function getRandomString(num: number): string {
     const letters = [];
     const numbers = [];
 
-    for (let i = 0;i < 25;i ++) {
+    for (let i = 0; i < 25; i++) {
         letters.push(String.fromCharCode(65 + i));
     }
 
-    for (let i = 0; i < 10; i ++) {
+    for (let i = 0; i < 10; i++) {
         numbers.push(i.toString());
     }
 
     const groups = [letters, numbers];
     let res = '';
-    for (let i = 0;i < num;i ++) {
+    for (let i = 0; i < num; i++) {
         const randomGroup = getRandomElement(groups);
         res += getRandomElement(randomGroup);
     }

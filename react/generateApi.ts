@@ -11,8 +11,7 @@ export default function (api: string, params: object): [string, object] {
     let targetApi = api;
     try {
         targetApi = generatePath(api, apiParams);
-    }
-    catch {
+    } catch {
         // todo
     }
     return [targetApi, requestParams];

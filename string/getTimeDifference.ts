@@ -27,9 +27,9 @@ export default function getTimeDifference(previous: string) {
         const previousTime = dayjs(previous).get(uint);
 
         if (nowTime <= previousTime) {
-            return getDifference(ranges[++ index]);
+            return getDifference(ranges[++index]);
         }
-        return `${(nowTime - previousTime) + rangeMap.get(ranges[index])!}前`;
+        return `${nowTime - previousTime + rangeMap.get(ranges[index])!}前`;
     };
     return getDifference(ranges[index]);
 }

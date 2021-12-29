@@ -1,0 +1,11 @@
+input {
+    /* 自动填充后文字颜色和placeholder颜色 */
+    -webkit-text-fill-color: #fff;
+    /* 光标颜色 */
+    caret-color: #fff;
+}
+
+input:-webkit-autofill {
+    /* 自动填充后背景颜色 */
+    transition: background-color 5000s ease-in-out 0s;
+}
